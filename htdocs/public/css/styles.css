@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#fundo{
+    display: grid; /* Dispõe os elementos em grade */
+    grid-template-columns: 22rem 4fr; /* Define quantas e qual a largura das colunas */
+    gap: 0;
+    height: 100vh;
+}
+
+#perfil{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #3A2312;
+}
+
+.logo{
+    text-align: center;
+}
+
+#logo_img{
+    width: 85%;
+}
+
+#nome_empresa{
+    color: #FFFDF3;
+    font-size: 3rem;
+}
+
+#totais{
+    padding-top: 3rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    color: #f8e895;
+}
+
+#meio_perfil{
+    flex: 1; /* Faz a div ocupar todo o espaço disponível */
+    display: grid;
+    place-items: center;
+}
+
+#add_receita{
+    width: 100%;
+    padding: 5%;
+    color: #FFFDF3;
+    font-size: 1.5rem;
+    border-top: 0.2rem solid #FFFDF3;
+    border-bottom: 0.2rem solid #FFFDF3;
+    background: #000000;
+}
+
+#rodape_perfil{
+    text-align: center;
+    color: #FFFDF3;
+    background: #3A2312;
+    margin-bottom: 2%;
+}
+
+#icones{
+    width: 100%;
+    display: flex;
+    margin-top: 3%;
+}
+
+.icone{
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 1%;
+}
+
+header{
+    height: 4rem;
+}
+
+.header_{
+    display: flex;
+    flex-direction: row; /* Posiciona o botão começando da direita para a esquerda */
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.m{
+  flex: 1;
+}
+
+#login{
+    height: 60%;
+    width: 5rem;
+    margin-right: 4rem;
+    font-size: 1.5rem;
+    color: #3A2312;
+    border: 0.2rem solid #3A2312;
+    border-radius: 0.5rem;
+    background: #FFFDF3;
+}
+
+#div_filtro{
+    height: 4rem;
+    display: flex;
+    flex-direction: row; /* Dispoe os elementos em linha horizontal*/
+    align-items: center; /* Centraliza vertialmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    color: #FFFDF3;
+    background:  #3A2312;
+    flex-shrink: 0;
+}
+
+.filtros{
+    margin: 0 3rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#display_{
+    flex: 1; /* Faz a div ocupar todo o espaço disponível */
+}
+
+.recipe_card{
+    height: 10rem;
+    margin-top: 1%;
+    border: 0.1rem solid #3A2312;
+    border-radius: 0.5rem;
+}
+
+.recipe_header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza o "Trilha" */
+    align-items: center;
+}
+
+.user_info{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_avatar{
+    height: 7rem;
+}
+
+.user_name{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.recipe_title{
+    font-size: 2rem;
+    color: #000;
+}
+
+.recipe_tipe{
+    padding: 0 1rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #3A2312;
+    border: 0.1rem solid #3A2312;
+    border-radius: 0.6rem;
+    background-color: #FFFDF3;
+}
+
+.recipe_date{
+    position: absolute;
+    right: 0;
+    font-size: 1rem;
+    color: #000;
+    padding-right: 1%;
+}
+
+.recipe_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meta_info{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.meta_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meta_label{
+    font-size: 1.5rem;
+    color: #3A2312;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.meta_value{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.recipe_footer{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+
+.interacoes{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.btn_action {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: none;
+    border: 0.1rem solid #3A2312;
+    padding: 0.3rem 0.7rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+    margin-left: 0.5rem;
+}
+
+.btn_action:hover {
+    background-color: #3A2312;
+    
+    .icon{
+        filter: invert(100%);   
+    }
+
+    .count{
+        color: #FFFDF3;
+    }
+}
+
+.icon{
+    height: 2rem;
+}
+
+.count {
+    font-weight: bold;
+    color: #3A2312;
+    font-size: 1.5rem;
+  }
+
+.recipe_id {
+    font-size: 0.8rem;
+    color: #3A2312;
+    margin-left: 4rem;
+    margin-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+#rodape_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.navegation_bt{
+    font-size: 1.5rem;
+    border: 0.1rem solid #3A2312;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    margin: 0 0.1rem;
+}

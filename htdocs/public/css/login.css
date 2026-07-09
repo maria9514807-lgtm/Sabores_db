@@ -1,0 +1,121 @@
+#viewLogin {
+    width: 20rem;
+    border: none;
+    border-radius: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3A2312;
+    overflow: hidden;
+}
+
+#viewLogin::backdrop {
+    background: #00000020;
+    backdrop-filter: blur(7px);
+}
+
+#top_bar {
+    height: 2rem;
+    display: flex;
+    flex-direction: row; /* Posiciona o botão começando da direita para a esquerda */
+    align-items: center;
+    flex-shrink: 0;
+    padding-left: 0.5rem;
+}
+
+#space02{
+    flex: 1;
+}
+
+#x{
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+#logo_login{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#logo_login_img{
+    width: 50%;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.identificador{
+    text-align: left;
+}
+
+.campo_input{
+    border: 0.2rem solid #3A2312;
+    text-align: center;
+}
+
+.item_form_login{
+    width: 80%;
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+
+#login_bt{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #FFFDF3;
+    background: #3A2312;
+    flex-shrink: 0;
+    border: 0.2rem solid #3A2312;
+}
+
+#cancel_bt{
+    border: 0.2rem solid #3A2312;
+    background: transparent;
+    margin-bottom: 1rem;
+    color: #3A2312;
+}
+
+#rodape_login{
+    height: 4.4rem;
+    text-align: center;
+    font-size: small;
+    color: #FFFDF3;
+    background: #3A2312;
+}
+
+#icones_login{
+    display: flex;
+}
+
+.icone_login{
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.icone_img_login{
+    height: 2rem;
+}
+
+.erro_borda {
+    border: 0.2rem solid #E74C3C;
+}
+
+#mensagem {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.msg_erro {
+    color: #E74C3C;
+}
+
+.campo_input:focus {
+    outline: none; /* Remove a marcação padrão feia */
+    box-shadow: 0 0 10px #3A2312; /* Adiciona uma sombra que combina */
+}
