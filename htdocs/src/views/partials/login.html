@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="css/login.css">
+<script defer src="js/login.js"></script>
+
+<dialog id="viewLogin">
+  <div id="top_bar">
+    <h3>Login</h3>
+    <div id="space02"></div>
+    <a onclick="document.getElementById('viewLogin').close()">
+      <img id="x" src="img/icones/x.svg" alt="Logo da emrpesa sabores">
+    </a>
+  </div>
+  <div id="logo_login">
+    <img id="logo_login_img" src="img/sabores.png" alt="Logo da emrpesa sabores">
+    <h1 >Sabores</h1>
+  </div>
+  <form id="formulario" method="dialog">
+    <label for="nome" class="identificador item_form_login" >Nome do usuário</label>
+    <input type="text" id="nome" autocomplete="off" class="campo_input item_form_login"> <!-- Sem required -->
+    <label for="senha" class="identificador item_form_login" >Senha</label>
+    <input type="password" id="senha" autocomplete="off" class="campo_input item_form_login">
+    
+    <button id="login_bt" class="item_form_login" type="button" onclick="fazer_login(event)">Login</button>
+    <button id="cancel_bt" class="item_form_login" type="button" onclick="document.getElementById('viewLogin').close()">Cancelar</button>
+  </form>
+
+  <div id="mensagem"></div>
+
+  <footer id="rodape_login">
+      <label> Sabores </label>
+      <div id="icones_login">
+          <a href="https://instagram.com.br" class="icone_login">
+              <img class="icone_img_login" src="img/icones/instagram.svg" alt="logo do instagram">
+          </a>
+          <a href="https://x.com.br" class="icone_login">
+              <img class="icone_img_login" src="img/icones/twitter.svg" alt="logo do X">
+          </a>
+          <a href="https://tiktok.com.br" class="icone_login">
+              <img class="icone_img_login" src="img/icones/tiktok.svg" alt="logo do tiktok">
+          </a>
+      </div>
+      <label>Copyright-2026</label>
+  </footer>
+</dialog>
